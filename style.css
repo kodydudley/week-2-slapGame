@@ -22,3 +22,7 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
+.gameOverCard {
+  max-height: 100vh;
+}

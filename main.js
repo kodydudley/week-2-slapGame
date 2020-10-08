@@ -16,7 +16,8 @@ function update() {
   hitsElem.innerText = `Hits: ${hits}`
   let hits1Elem = document.getElementById("hits1")
   hits1Elem.innerText = `Hits: ${hits1}`
-
+  let gameOverElem = document.getElementById("gameOver")
+  gameOverElem.innerHTML = gameOver()
 }
 
 
@@ -25,7 +26,7 @@ addEventListener("keydown", function slapHealth() {
     health2 -= 2
     hits++
     update()
-
+    gameOver()
   }
 })
 
@@ -34,6 +35,7 @@ addEventListener("keydown", function slapHealth2() {
     health1--
     hits1++
     update()
+    gameOver()
   }
 })
 
@@ -43,6 +45,7 @@ addEventListener("keydown", function punchHealth() {
     health2 -= 5
     hits++
     update()
+    gameOver()
   }
 })
 
@@ -51,6 +54,7 @@ addEventListener("keydown", function punchHealth2() {
     health1 -= 6
     hits1++
     update()
+    gameOver()
   }
 })
 
@@ -60,6 +64,7 @@ addEventListener("keydown", function kickHealth() {
     health2 -= 3
     hits++
     update()
+    gameOver()
   }
 })
 
@@ -68,7 +73,30 @@ addEventListener("keydown", function kickHealth2() {
     health1 -= 3
     hits1++
     update()
+    gameOver()
   }
 })
 
+
+function gameOver() {
+  if (health1 <= 0 || health2 <= 0) {
+    document.getElementById("gameOverBG").classList.remove("d-none")
+    document.getElementById("gameOverBG").classList.add("d-block")
+    document.getElementById("mainBG").classList.add("d-none")
+    document.querySelector("header").classList.add("d-none")
+    document.querySelector("footer").classList.add("d-none")
+
+    return /*html*/ `<div class="card gameOverCard">
+    <img class="card-img-top" src="https://i.pinimg.com/originals/32/84/75/32847539f3d1e018a00145a3848f67e8.jpg"
+      alt="Card image cap">
+    <div class="card-body">
+      <button class="btn btn-warning btn-block" onclick="window.location.href=window.location.href">Start Over</button>
+    </div>
+  </div>`
+  } else {
+    return ""
+  }
+}
+
 update()
+gameOver()
