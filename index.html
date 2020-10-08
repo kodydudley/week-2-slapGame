@@ -13,42 +13,83 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-dark"><img src="https://i.pinimg.com/originals/32/84/75/32847539f3d1e018a00145a3848f67e8.jpg" alt="">
   <header>
-    <div class="container-fluid">
+    <div class="container-fluid bg-dark text-light">
       <div class="row justify-content-around">
-        <h3 id="name"></h3>
-        <h3 id="healthValue">Health: </h3>
-        <h3 id="hits">How many htis: </h3>
+        <h3 id="name1"></h3>
+        <h3 id="name2"></h3>
+      </div>
+      <div class="row">
+        <div class="col-5 d-flex justify-content-around">
+          <h3 id="health1Value">Health: </h3>
+          <h3 id="hits">How many hits: </h3>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5 d-flex justify-content-around">
+          <h3 id="health2Value">Health: </h3>
+          <h3 id="hits1">How many hits: </h3>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <img src="//placehold.it/200x200" alt="">
+    <div class="container-fluid bg-white mt-4 mainBG">
+      <div class="row text-center justify-content-center">
+        <div class="col-4">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Super_Zangief.png" alt="" class="">
+        </div>
+        <div class="col-4">
+          <img
+            src="https://img.pngio.com/vs-street-fighter-png-free-download-fourjayorg-street-fighter-vs-png-1024_875.png"
+            alt="" class="text-center d-flex img-fluid">
+        </div>
+        <div class="col-4">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Ryu_TvC.png" alt="" class="">
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid mt-3">
       <div class="row">
-        <div class="col">
-          <button class="btn btn-primary" onclick="slapHealth()">
-            Slap
-          </button>
+        <div class="col-6">
+          <div class="col">
+            <button class="btn btn-primary btn-block" onkeydown="slapHealth()">
+              <div class="col">
+                <b>Slap:</b> A
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-success btn-block" onclick="kickHealth()">
+              <b>Kick:</b> S
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger btn-block" onclick="punchHealth()">
+              <b>Punch:</b> D
+            </button>
+          </div>
         </div>
-        <div class="col">
-          <button class="btn btn-primary" onclick="kickHealth()">
-            Kick
-          </button>
-        </div>
-        <div class="col">
-          <button class="btn btn-primary" onclick="punchHealth()">
-            Punch
-          </button>
+        <div class="col-6">
+          <div class="col">
+            <button class="btn btn-primary btn-block" onkeydown="slapHealth2()">
+              <div class="col">
+                <b>Slap:</b> J
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-success btn-block" onclick="kickHealth2()">
+              <b>Kick:</b> K
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger btn-block" onclick="punchHealth2()">
+              <b>Punch:</b> L
+            </button>
+          </div>
         </div>
       </div>
     </div>

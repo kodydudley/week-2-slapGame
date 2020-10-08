@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
 }
@@ -14,4 +14,11 @@ main {
 
 footer {
   height: 7vh;
+}
+
+.mainBG {
+  background-image: url(https://i.pinimg.com/originals/f6/c4/51/f6c4516c11809f1b3550e0c68abfef89.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
