@@ -21,7 +21,7 @@ function update() {
 }
 
 
-addEventListener("keydown", function slapHealth() {
+addEventListener("keyup", function slapHealth() {
   if (event.keyCode == 65) {
     health2 -= 2
     hits++
@@ -30,7 +30,7 @@ addEventListener("keydown", function slapHealth() {
   }
 })
 
-addEventListener("keydown", function slapHealth2() {
+addEventListener("keyup", function slapHealth2() {
   if (event.keyCode == 74) {
     health1--
     hits1++
@@ -40,7 +40,7 @@ addEventListener("keydown", function slapHealth2() {
 })
 
 
-addEventListener("keydown", function punchHealth() {
+addEventListener("keyup", function punchHealth() {
   if (event.keyCode == 83) {
     health2 -= 5
     hits++
@@ -49,7 +49,7 @@ addEventListener("keydown", function punchHealth() {
   }
 })
 
-addEventListener("keydown", function punchHealth2() {
+addEventListener("keyup", function punchHealth2() {
   if (event.keyCode == 75) {
     health1 -= 6
     hits1++
@@ -59,7 +59,7 @@ addEventListener("keydown", function punchHealth2() {
 })
 
 
-addEventListener("keydown", function kickHealth() {
+addEventListener("keyup", function kickHealth() {
   if (event.keyCode == 68) {
     health2 -= 3
     hits++
@@ -68,7 +68,7 @@ addEventListener("keydown", function kickHealth() {
   }
 })
 
-addEventListener("keydown", function kickHealth2() {
+addEventListener("keyup", function kickHealth2() {
   if (event.keyCode == 76) {
     health1 -= 3
     hits1++
