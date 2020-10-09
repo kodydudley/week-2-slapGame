@@ -11,7 +11,7 @@ function update() {
   let name1Elem = document.getElementById("name1")
   name1Elem.innerText = "Name: Kody"
   let name2Elem = document.getElementById("name2")
-  name2Elem.innerText = "Name: Kody"
+  name2Elem.innerText = "Name: Trevor"
   let hitsElem = document.getElementById("hits")
   hitsElem.innerText = `Hits: ${hits}`
   let hits1Elem = document.getElementById("hits1")
